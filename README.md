@@ -2,7 +2,25 @@ An end-to-end Machine Learning pipeline built using Python, Scikit-Learn, and Pa
 
 ## 🚀 Project Overview
 
-This repository hosts an NLP-based spam detector utilizing a **TF-IDF (Term Frequency-Inverse Document Frequency) Vectorizer** for text representation, paired with a **Logistic Regression** model. The pipeline achieves state-of-the-art predictive performance, making it lightweight and highly reliable for real-time inference.
+This repository hosts an NLP-based spam detector utilizing a **TF-IDF (Term Frequency-Inverse Document Frequency) Vectorizer** for text representation, paired with a **Logistic Regression** model.
+
+## 🔄 Project Pipeline
+
+```text
+spam.csv
+   ↓
+train_model.py
+   ↓
+Text normalization + TF-IDF + handcrafted features
+   ↓
+SVM / Logistic Regression / Ensemble
+   ↓
+Evaluation
+   ↓
+backend/model.joblib + backend/metrics.json
+   ↓
+FastAPI /predict endpoint
+```
 
 ## 📊 Model Performance
 
@@ -51,11 +69,6 @@ def predict_message(message):
 ## 📂 Repository Structure
 - `spam.csv`: The raw message dataset.
 - `train_model.py`: Training script and pipeline builder.
+- `backend/`: FastAPI backend, saved model, and metrics.
 - `images/`: Exported performance evaluation plots.
 - `README.md`: Project summary and performance log.
-"""
-
-with open(readme_path, 'w', encoding='utf-8') as f:
-    f.write(updated_readme_content)
-
-print("README.md successfully updated with visual representations!")
