@@ -1,5 +1,3 @@
-updated_readme_content = """# SMS Spam Classifier 📱
-
 An end-to-end Machine Learning pipeline built using Python, Scikit-Learn, and Pandas to classify SMS messages as either **Spam** or **Ham** (Legitimate).
 
 ## 🚀 Project Overview
