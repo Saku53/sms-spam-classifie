@@ -1,0 +1,6 @@
+{
+  "name": "Python SMS Spam Classifier",
+  "description": "A Python-based SMS spam classification system with a FastAPI backend.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
